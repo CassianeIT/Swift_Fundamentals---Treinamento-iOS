@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuQ-66-P8c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maça-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdF-bi-H30">
+                                <rect key="frame" x="153" y="403" width="108" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="tVo-rW-e1G"/>
+                                    <constraint firstAttribute="width" constant="108" id="vYt-Su-oOR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="maca">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OAu-54-2FH" kind="show" id="PBq-Zr-PRB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAb-tC-kxq">
+                                <rect key="frame" x="157" y="310" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0qo-ZR-hia"/>
+                                    <constraint firstAttribute="width" constant="100" id="Mfr-gk-gOq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UdF-bi-H30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JbH-DT-DgV"/>
+                            <constraint firstItem="UdF-bi-H30" firstAttribute="top" secondItem="CAb-tC-kxq" secondAttribute="bottom" constant="59" id="MNe-Qi-Cn1"/>
+                            <constraint firstItem="CAb-tC-kxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlk-6J-QYI"/>
+                            <constraint firstItem="UdF-bi-H30" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kRD-FQ-gYw"/>
+                            <constraint firstItem="CAb-tC-kxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="snA-ef-qIf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maça" largeTitleDisplayMode="always" id="ecY-EY-2dM"/>
+                    <connections>
+                        <outlet property="textField" destination="CAb-tC-kxq" id="H79-Qf-QUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Banana-->
+        <scene sceneID="wNO-vg-uLV">
+            <objects>
+                <viewController id="OAu-54-2FH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A76-Ey-yI0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aC-yG-qUt">
+                                <rect key="frame" x="152" y="403" width="110" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ZCE-MT-8OC"/>
+                                    <constraint firstAttribute="width" constant="110" id="u0G-OC-Nv1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="banana"/>
+                                <connections>
+                                    <segue destination="eLg-EK-h6B" kind="show" id="ZH9-Xa-NS0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LMO-Iw-rv1"/>
+                        <color key="backgroundColor" red="1" green="0.98670152003658773" blue="0.71870597630539357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1aC-yG-qUt" firstAttribute="centerY" secondItem="A76-Ey-yI0" secondAttribute="centerY" id="GoO-zz-FOE"/>
+                            <constraint firstItem="1aC-yG-qUt" firstAttribute="centerX" secondItem="A76-Ey-yI0" secondAttribute="centerX" id="yyL-IX-qaJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Banana" largeTitleDisplayMode="never" id="9CV-gs-cyt">
+                        <barButtonItem key="backBarButtonItem" title="Banana" id="0jf-Me-Dqw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPi-4q-pJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913.0434782608697" y="93.75"/>
+        </scene>
+        <!--Abacate-->
+        <scene sceneID="PYs-1B-SQc">
+            <objects>
+                <viewController id="eLg-EK-h6B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eYU-i9-D6E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToV-Ai-ID0">
+                                <rect key="frame" x="157.5" y="403" width="99" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="d14-Qo-EZ4"/>
+                                    <constraint firstAttribute="height" constant="90" id="vXk-Mh-qEQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="fatiador-de-abacate"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XgR-vX-1i4"/>
+                        <color key="backgroundColor" red="0.67056971789999997" green="0.99064582590000005" blue="0.63129901889999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ToV-Ai-ID0" firstAttribute="centerY" secondItem="eYU-i9-D6E" secondAttribute="centerY" id="ZgU-9E-2Z6"/>
+                            <constraint firstItem="ToV-Ai-ID0" firstAttribute="centerX" secondItem="eYU-i9-D6E" secondAttribute="centerX" id="wtC-QP-5vg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Abacate" largeTitleDisplayMode="never" id="wOK-Bz-9qb">
+                        <barButtonItem key="backBarButtonItem" title="Banana" id="AN9-bz-2zB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" image="applelogo" catalog="system" id="Ko5-Yk-y2r">
+                            <connections>
+                                <segue destination="z5C-Qg-OfB" kind="unwind" unwindAction="unwinToRedWithUnwindSegue:" id="iKi-CP-gpD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfJ-UV-QRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="z5C-Qg-OfB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2713.04347826087" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tUA-Zm-ubs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QuQ-66-P8c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uuU-M7-0ld">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z1l-zu-PBa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hit-yU-XqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="banana" width="512" height="512"/>
+        <image name="fatiador-de-abacate" width="512" height="512"/>
+        <image name="maca" width="512" height="512"/>
+    </resources>
+</document>

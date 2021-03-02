@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuQ-66-P8c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maça-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-X9-3bN">
+                                <rect key="frame" x="60" y="317" width="72" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Banana" image="banana"/>
+                                <connections>
+                                    <action selector="bananaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Mc-X4-J63"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFM-9Z-y6F">
+                                <rect key="frame" x="183" y="397" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfh-Sf-Wqm">
+                                <rect key="frame" x="264" y="317" width="68" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abacate" image="fatiador-de-abacate"/>
+                                <connections>
+                                    <action selector="abacateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZ3-Q3-NVF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maça" largeTitleDisplayMode="always" id="ecY-EY-2dM"/>
+                    <connections>
+                        <outlet property="segueSwitch" destination="QFM-9Z-y6F" id="9jy-cH-EIc"/>
+                        <segue destination="OAu-54-2FH" kind="show" identifier="Banana" id="LxC-Mt-U6B"/>
+                        <segue destination="eLg-EK-h6B" kind="show" identifier="Abacate" id="e6L-jj-ITc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Banana-->
+        <scene sceneID="wNO-vg-uLV">
+            <objects>
+                <viewController id="OAu-54-2FH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A76-Ey-yI0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LMO-Iw-rv1"/>
+                        <color key="backgroundColor" red="1" green="0.98670152003658773" blue="0.71870597630539357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Banana" largeTitleDisplayMode="never" id="9CV-gs-cyt">
+                        <barButtonItem key="backBarButtonItem" title="Banana" id="0jf-Me-Dqw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPi-4q-pJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="-206"/>
+        </scene>
+        <!--Abacate-->
+        <scene sceneID="PYs-1B-SQc">
+            <objects>
+                <viewController id="eLg-EK-h6B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eYU-i9-D6E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XgR-vX-1i4"/>
+                        <color key="backgroundColor" red="0.67056971789999997" green="0.99064582590000005" blue="0.63129901889999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Abacate" largeTitleDisplayMode="never" id="wOK-Bz-9qb">
+                        <barButtonItem key="backBarButtonItem" title="Banana" id="AN9-bz-2zB"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfJ-UV-QRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="470"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tUA-Zm-ubs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QuQ-66-P8c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uuU-M7-0ld">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z1l-zu-PBa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hit-yU-XqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banana" width="512" height="512"/>
+        <image name="fatiador-de-abacate" width="512" height="512"/>
+    </resources>
+</document>

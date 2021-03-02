@@ -47,7 +47,6 @@ print(winner?.name ?? "")
  Now write a failable initializer inside the `User` struct above that takes parameters `name` and `stepsToday` as an optional `String` and `Int`, respectively. The initializer should return `nil` if either of the parameters are `nil`. Use variable shadowing when unwrapping the two parameters.
  */
 
-
 /*:
 
  _Copyright © 2018 Apple Inc._
