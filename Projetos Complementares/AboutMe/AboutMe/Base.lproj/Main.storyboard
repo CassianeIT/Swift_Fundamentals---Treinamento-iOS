@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCk-IT-Ex1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bio-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way-1" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-po-XDo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vfx-Dp-jBF">
+                                <rect key="frame" x="59" y="391" width="296" height="114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Cassiane Freitas Occupation: Developer Hometown: Curitiba" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-oC-loH">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="114"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.89382690190000003" green="0.74758201840000005" blue="0.372430861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="5bu-a4-Z1q"/>
+                                    <constraint firstAttribute="height" constant="114" id="Saa-nH-n98"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I7z-po-XDo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Ous-b8-GTk"/>
+                            <constraint firstItem="I7z-po-XDo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ty1-pQ-lZk"/>
+                            <constraint firstItem="Vfx-Dp-jBF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VjL-cZ-hF5"/>
+                            <constraint firstAttribute="bottom" secondItem="I7z-po-XDo" secondAttribute="bottom" id="YSw-SI-A6v"/>
+                            <constraint firstItem="Vfx-Dp-jBF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hh9-g1-STQ"/>
+                            <constraint firstItem="I7z-po-XDo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="re9-fk-U21"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bio" image="person" catalog="system" selectedImage="person" id="wu6-o9-exK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="246"/>
+        </scene>
+        <!--Family-->
+        <scene sceneID="vmB-Wd-3PU">
+            <objects>
+                <viewController id="rkO-y6-7vA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h3W-NI-Uqh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way-1" translatesAutoresizingMaskIntoConstraints="NO" id="IyZ-FA-RF6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-uS-7K1">
+                                <rect key="frame" x="71" y="391" width="272" height="114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brother: Bruno Freitas                   Sister: Ciciane Freitas      Husband: Alan Bancks" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT7-wg-qhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="114"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.89382690190000003" green="0.74758201840000005" blue="0.372430861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="chv-KI-njM"/>
+                                    <constraint firstAttribute="width" constant="272" id="tKY-Kx-yU0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4l9-Ng-Dqh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IyZ-FA-RF6" firstAttribute="top" secondItem="h3W-NI-Uqh" secondAttribute="top" id="5t6-gm-5hM"/>
+                            <constraint firstAttribute="bottom" secondItem="IyZ-FA-RF6" secondAttribute="bottom" id="JT4-3o-4Yk"/>
+                            <constraint firstItem="gcE-uS-7K1" firstAttribute="centerX" secondItem="h3W-NI-Uqh" secondAttribute="centerX" id="MHi-tI-QTv"/>
+                            <constraint firstItem="IyZ-FA-RF6" firstAttribute="leading" secondItem="h3W-NI-Uqh" secondAttribute="leading" id="YKc-bh-CJQ"/>
+                            <constraint firstItem="gcE-uS-7K1" firstAttribute="centerY" secondItem="h3W-NI-Uqh" secondAttribute="centerY" id="gUg-uk-CwA"/>
+                            <constraint firstItem="IyZ-FA-RF6" firstAttribute="trailing" secondItem="h3W-NI-Uqh" secondAttribute="trailing" id="hSi-hZ-3Ug"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Family" image="Icon-Small" selectedImage="Icon-Small" id="hgn-bc-HY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oG2-DR-sCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="246"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="kO0-uM-3lM">
+            <objects>
+                <viewController id="uvj-k0-OoD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bTp-bJ-sMj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way-1" translatesAutoresizingMaskIntoConstraints="NO" id="s0K-ld-7gP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="igA-9B-3iX">
+                                <rect key="frame" x="109.5" y="364.5" width="195" height="167"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch TV      Read                    Play video game" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X3-uO-FbG">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="167"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.89382690190000003" green="0.74758201840000005" blue="0.372430861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="FKX-kO-bt6"/>
+                                    <constraint firstAttribute="height" constant="167" id="GCq-a8-b13"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sii-n1-XaV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s0K-ld-7gP" firstAttribute="leading" secondItem="bTp-bJ-sMj" secondAttribute="leading" id="1z1-0q-rfe"/>
+                            <constraint firstItem="igA-9B-3iX" firstAttribute="centerX" secondItem="bTp-bJ-sMj" secondAttribute="centerX" id="Jec-yp-jqb"/>
+                            <constraint firstAttribute="bottom" secondItem="s0K-ld-7gP" secondAttribute="bottom" id="bYa-GU-k6V"/>
+                            <constraint firstItem="s0K-ld-7gP" firstAttribute="trailing" secondItem="bTp-bJ-sMj" secondAttribute="trailing" id="jqI-Ls-rWs"/>
+                            <constraint firstItem="igA-9B-3iX" firstAttribute="centerY" secondItem="bTp-bJ-sMj" secondAttribute="centerY" id="xNi-85-nuc"/>
+                            <constraint firstItem="s0K-ld-7gP" firstAttribute="top" secondItem="bTp-bJ-sMj" secondAttribute="top" id="zY4-le-qmw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="Icon-Small-1" selectedImage="Icon-Small-1" id="N6q-Lt-S54"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNy-gC-nLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144" y="245"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Cd-iL-KiV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nCk-IT-Ex1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eNc-DD-mmG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.72941994669999999" green="0.72925943140000005" blue="0.74509447809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="2ll-mP-HGh"/>
+                        <segue destination="rkO-y6-7vA" kind="relationship" relationship="viewControllers" id="NIw-cq-Sng"/>
+                        <segue destination="uvj-k0-OoD" kind="relationship" relationship="viewControllers" id="5qF-Vh-0yI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBn-TH-eDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="-702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Small" width="29" height="29"/>
+        <image name="Icon-Small-1" width="29" height="29"/>
+        <image name="milky_way-1" width="2000" height="3008"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
