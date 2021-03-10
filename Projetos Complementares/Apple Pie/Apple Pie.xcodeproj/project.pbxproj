@@ -62,10 +62,10 @@
 				D869239F25E6CCB50092F8B5 /* SceneDelegate.swift */,
 				D86923A125E6CCB50092F8B5 /* ViewController.swift */,
 				D86923A325E6CCB50092F8B5 /* Main.storyboard */,
+				D86923B325E6E0300092F8B5 /* Game.swift */,
 				D86923A625E6CCB70092F8B5 /* Assets.xcassets */,
 				D86923A825E6CCB70092F8B5 /* LaunchScreen.storyboard */,
 				D86923AB25E6CCB70092F8B5 /* Info.plist */,
-				D86923B325E6E0300092F8B5 /* Game.swift */,
 			);
 			path = "Apple Pie";
 			sourceTree = "<group>";
